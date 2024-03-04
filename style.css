@@ -11,7 +11,7 @@ body {
 }
 
 .header {
-   position: fixed;
+   position: flex;
    top: 0;
    width: 100%;
    padding: 20px 10%;
@@ -28,10 +28,14 @@ body {
    font-weight: 600;
    text-decoration: none;
    color: white;
-   text-transform: uppercase;
+   text-transform: capitalize;
    pointer-events: none;
    opacity: 0;
    animation: slideTop 1s ease forwards;
+}
+
+span {
+   color: #f06;
 }
 
 .navbar a {
@@ -272,8 +276,46 @@ body {
    transition: .4s ease;
 }
 
+
 .btn:hover::after {
    background-position: 100% 0;
+}
+
+.footer-content {
+   position: absolute;
+   width: 100%;
+   height: 100px;
+   display: inline-flex;
+   flex-direction: column;
+   background: transparent;
+   align-items: center;
+   justify-content: center;
+   margin-top: -70px;
+}
+
+.footer-content .footer-icons {
+   display: flex;
+   align-items: center;
+   justify-content: space-around;
+   width: 30%;
+   height: 100px;
+}
+
+.footer-icons a {
+   display: flex;
+   text-decoration: none;
+   justify-content: center;
+   align-items: center;
+   width: 40px;
+   height: 40px;
+   background: linear-gradient(45deg, #f06, #f06);
+   border-radius: 50%;
+   color: #fff;
+   margin: 20px 0;
+}
+
+.footer-icons a:hover {
+   background: transparent;
 }
 
 @keyframes slideTop {
