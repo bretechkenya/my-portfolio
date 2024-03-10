@@ -339,6 +339,10 @@ span {
       background: transparent;
    }
 
+   .footer-icons a:hover {
+      background: transparent;
+   }
+
    .home-content {
       width: 90%;
       align-items: center;
@@ -370,7 +374,7 @@ span {
    }
 
    .footer-icons a {
-      width: 30px;
+      width: 100px;
       height: 30px;
    }
 
@@ -383,15 +387,10 @@ span {
       width: 300px;
    }
 
-   .footer-icons a {
-      width: 10px;
-      height: 5px;
-      font-size: 10px;
-   }
 }
 
 @media (max-width: 436px) {
-   .glowing-circle.home-image.image img {
-      width: 60%;
+   .footer-icons a {
+      background-color: transparent;
    }
 }
