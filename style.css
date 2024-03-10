@@ -65,7 +65,7 @@ span {
    display: flex;
    align-items: center;
    justify-content: space-between;
-   padding: 70px 10%;
+   padding: 60px 5%;
 }
 
 .home-sci a {
@@ -135,7 +135,6 @@ span {
    width: 380px;
    height: 380px;
    border-radius: 50%;
-   z-index: 1;
    overflow: hidden;
 }
 
@@ -151,8 +150,7 @@ span {
 
 
 .home-content {
-   width: 340px;
-   margin-left: -70px;
+   width: 400px;
 }
 
 .home-content h1 {
@@ -226,7 +224,7 @@ span {
    align-items: center;
    width: 40px;
    height: 40px;
-   background: linear-gradient(45deg, #f06, #f06);
+   background: linear-gradient(45deg, #f06, #3cf);
    border-radius: 50%;
    color: #fff;
    margin: 20px 0;
@@ -311,87 +309,89 @@ span {
    }
 }
 
-@media only screen and (max-width: 412px) {
+@media (max-width: 936px) {
    .home {
       flex-direction: column;
       align-items: center;
-   }
-
-   .home-content {
-      width: 100%;
       justify-content: center;
-      align-items: center;
-      margin: 0 auto;
-      text-align: left;
-   }
-
-   .home-content h1 {
-      font-size: 30px;
-      margin: 0 auto;
       width: 100%;
    }
 
    .home-sci a {
       display: inline-flex;
-      text-decoration: none;
-      justify-content: center;
-      text-align: center;
-      align-items: center;
       padding: 20px 10px;
+      justify-content: center;
+      align-items: center;
       width: 40px;
       height: 40px;
-      background: linear-gradient(45deg, #f06, #f06);
-      border-radius: 50%;
-      color: #fff;
-      margin: 10px 0;
-
    }
 
    .footer-icons a {
       display: inline-flex;
-      text-decoration: none;
+      padding: 20px 10px;
+      justify-content: center;
+      align-items: center;
+      width: 40px;
+      height: 40px;
+   }
+
+   .home-sci a:hover {
+      background: transparent;
+   }
+
+   .home-content {
+      width: 90%;
+      align-items: center;
+      height: 300px;
       justify-content: center;
       text-align: center;
-      align-items: center;
-      padding: 20px 10px;
-      background: linear-gradient(45deg, #f06, #f06);
-      border-radius: 50%;
-      color: #fff;
-      margin: 20px 0;
-      letter-spacing: 2px;
    }
 
-   .home-image .glowing-circle {
-      justify-content: center;
-      align-items: center;
-      width: 200px;
-      height: 200px;
-      margin: 10px auto;
+}
+
+@media (max-width: 778px) {
+   .header {
+      display: flex;
+      flex-direction: column;
+   }
+}
+
+@media (max-width: 621px) {
+   .footer-content {
+      margin-top: 10px;
+   }
+}
+
+@media (max-width: 619px) {
+   .navbar a {
+      display: flex;
+      flex-direction: column;
+      padding: 20px;
    }
 
-   .glowing-circle .image {
-      position: relative;
-      height: 220px;
-      width: 200px;
-      overflow: hidden;
-
+   .footer-icons a {
+      width: 30px;
+      height: 30px;
    }
 
-   .home-image {
-      width: 210px;
-      height: 230px;
+   .glowing-circle {
+      width: 100px;
+      height: 100px;
    }
 
    .image img {
-      position: absolute;
-      top: 10px;
-      left: 50%;
-      transform: translateX(-50%);
-      max-width: 170px;
-      object-fit: cover;
+      width: 300px;
    }
 
-   .footer-text {
-      text-align: center;
+   .footer-icons a {
+      width: 10px;
+      height: 5px;
+      font-size: 10px;
+   }
+}
+
+@media (max-width: 436px) {
+   .glowing-circle.home-image.image img {
+      width: 60%;
    }
 }
